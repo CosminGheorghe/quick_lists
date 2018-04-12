@@ -1,6 +1,3 @@
-//
-// Created by Alexandru Becheru on 20/03/2018.
-//
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -60,7 +57,6 @@ int get_no_elements(struct g_node *head, struct g_node *tail){
     }
 }
 
-///to be implemented
 void push_element_end(struct g_node *head ,struct g_node *tail ,int new_element_value){
     struct g_node *new_element;
     new_element = malloc(sizeof(struct g_node));
@@ -130,7 +126,6 @@ void print_list(struct g_node *head, struct g_node *tail){
     }
 }
 
-///to be implemented
 void print_list_reverse(struct g_node *head, struct g_node *tail){
     struct g_node *iterator = tail;
      printf("\n List: ");
@@ -159,7 +154,6 @@ int pop_element_begining(struct g_node *head, struct g_node *tail){
     return aux;
 }
 
-///to be implemented
 int pop_element_end(struct g_node *head, struct g_node *tail){
     struct g_node *poped_element;
     struct g_node *previous_element;
@@ -178,7 +172,7 @@ int pop_element_end(struct g_node *head, struct g_node *tail){
     return aux;
 }
 
-///to be implemented
+
 int pop_element_at_position(struct g_node *head, struct g_node *tail, int position){
     int no_elements;
     int current_positon;
@@ -189,10 +183,6 @@ int pop_element_at_position(struct g_node *head, struct g_node *tail, int positi
     struct g_node *poped_element;
 
     no_elements = head->info;
- //   if(position > no_elements || position < 0){
-      //  return -1;
-    //}
-
     assert(position >= 0);
     assert(position <= no_elements);
 
@@ -256,7 +246,6 @@ void empty_list(struct g_node *head, struct g_node *tail){
     tail->previous = head;
 }
 
-//to be implemented
 void selection_sort(struct g_node *head){
     struct g_node *min;
     struct g_node *iterator_1;
